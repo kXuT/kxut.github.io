@@ -2,17 +2,11 @@
 const config = {
   verbose: true,
   testEnvironment: 'jsdom',
-  testEnvironmentOptions: {
-    html: '<html lang="zh-cmn-Hant"></html>',
-    url: 'https://jestjs.io/',
-    userAgent: 'Agent/007',
-  },
 };
 
 module.exports = config;
 
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+const { JSDOM } = require("jsdom");
 const fs = require('fs');
 const path = require('path');
 
